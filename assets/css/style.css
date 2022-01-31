@@ -1,0 +1,293 @@
+/* Font-family:"Raleway"
+Headerhöhe:76px
+Logofarbe: #666
+Logofarbe in hover: #333
+Menüfarbe: #333 
+Menüfarbe in hover: #337ab7 */
+
+* {
+    box-sizing: border-box ;  
+    padding: 0;
+    margin: 0;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+header a:hover {
+    color: #337ab7;
+
+}
+
+.logo {
+    color: #666;
+    font-size: 2rem;    
+}
+
+
+.logo:hover {
+    color: #333;
+}    
+    
+
+header {
+    height: 20%;
+    border-bottom: 1px solid #333;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;   
+    padding: 2%;
+    align-items: center;        
+}
+
+div:nth-of-type(2) {
+    width: 60%;
+} 
+
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    gap: 2%;  
+}
+
+li  {
+    padding: 0 0% 0% 0;   
+    font-size: .5rem;    
+    
+}
+
+/* main  */
+
+main {
+    background: url(../img/photo.jpeg) no-repeat center/cover;
+    height: 90vh;
+}
+
+main h1, main p, main a {
+    color: #fff;
+    text-align: center;
+   
+ 
+}
+
+section:nth-of-type(1) {
+    margin: 0 auto 20%;
+}
+
+h1 {
+    padding: 30% 0 5% 0;
+    font-size: 4rem;
+    font-weight: 200 ;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+main nav {
+    margin: 1% auto;
+    font-size: 2rem;
+    width: 50%;
+}
+    
+.purple, .white {
+    border: 1px solid #fff;    
+    padding: 3% 5%;
+    width: 46%;
+    border-radius: 5px;
+}
+
+.purple {
+    background-color: #745cf9;
+    border: none;
+}
+.purple:hover {
+    background-color: #5234f9;
+}
+
+.seo p, .portfolio p, .parallax p, .limitless p, .images p  {
+    color: #8c979e;
+    text-align: left;
+    margin: 5% 0;
+    line-height: 1.5rem;
+    padding: 1%;    
+} 
+
+h2 {
+    color: #0e1015;
+    margin: 8% 0;
+}
+
+section.seo, section.portfolio, section.parallax, section.limitless {
+    width: 100%;
+    padding: 9% 5%;
+    display: grid;
+    grid-template-columns: 50% 50%;    
+    }
+
+    .seo, .portfolio, .parallax {
+        align-content: center;    
+    }
+
+img {
+    width: 100%; 
+    height: 100%;;
+}
+
+.seo img {
+    grid-column: 1;
+}
+
+.portfolio {
+    background: rgb(235, 234, 240);
+}
+
+.grids {
+    width: 90%;
+    margin: 0;
+}
+
+.parallax {
+    height: 100vh;
+    background: url(../img/Background2.jpeg) no-repeat center/cover;
+    background-attachment: fixed;
+    
+}
+
+.parallax h2 {
+    color: #fff;
+}
+
+.parallax article, .limitless article {
+    color: #fff;
+    margin: 20% auto;
+    grid-column: 1 / span 2;
+}
+
+
+.limitless article, {
+    margin: 0 auto;
+}
+
+.limitless figure {
+    background: url(../img/Background3.jpeg) no-repeat center/cover;
+    grid-column: 1 / span 2;
+    height: 50vh;
+}
+
+.images {
+    width: 90%;
+    margin: 2% auto 10%;
+    
+}
+
+.images article:nth-of-type(2) {
+    display: flex;
+    flex-wrap: wrap;
+       
+} 
+
+.images figure {
+    margin: 2%;
+    width: 400px;
+    height: auto;
+}
+
+@media screen and (max-width:992px) {
+    section.seo, section.portfolio, section.parallax, section.limitless {
+        padding: 21% 2% 4%;        
+    }
+
+    .images figure {
+        width: 361px;
+    
+    }
+}
+
+@media screen and (max-width:768px) {
+    nav {
+        display: block;
+        padding: 1%;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    div:nth-of-type(2) {
+        width: 100%;
+    }
+
+    ul {
+        margin: 5% 1%;
+        justify-content: space-between;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    a{
+        font-size: .7rem;
+    }
+
+    main {
+        height: 44vh;
+    }
+
+   section.seo, section.portfolio, section.parallax, section.limitless {
+        padding: 4% 2%;
+    }
+
+    .images figure {
+        width: 230px;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+
+    main nav, main nav a{
+        display: block;
+        margin: 2% auto;
+    }
+
+    p {
+        font-size: .8rem;
+    }
+
+    .images figure {
+        width: 80vw;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
